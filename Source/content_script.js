@@ -36,14 +36,14 @@ function handleText(textNode)
 	v = v.replace(/\bCannes lions\b/g, replace_txt);
 	v = v.replace(/\bcannes Lions\b/g, replace_txt);
 	v = v.replace(/\bcannes lions\b/g, replace_txt);
+	v = v.replace(/\bcannes\b/g, replace_txt);
+	v = v.replace(/\bCannes\b/g, replace_txt);
 	v = v.replace(/\bCannesLions\b/g, "AdDoucheFest");
 	v = v.replace(/\b#CannesLions\b/g, "#AdDoucheFest");
 	v = v.replace(/\bCannes_Lions\b/g, "AdDouche_Fest");
 	v = v.replace(/\bcanneslions\b/g, "douchefest");
 	v = v.replace(/\btogether of people interested in creative communications\b/g, "together of people interested in creative ways of being a complete douche.");
-	""
 
-	
 	textNode.nodeValue = v;
 }
 
