@@ -1,5 +1,9 @@
 walk(document.body);
 
+
+
+
+
 function walk(node) 
 {
 	// I stole this function from here:
@@ -47,4 +51,9 @@ function handleText(textNode)
 	textNode.nodeValue = v;
 }
 
+setInterval(function(){
+
+walk(document.body);
+
+}, 3000);
 
